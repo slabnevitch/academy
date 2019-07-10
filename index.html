@@ -38,13 +38,13 @@
               </div>
               <nav class="header-menu"><a href="tel:+78124994949" class="header-menu__tel">+7 (812) 499-49-49</a>
                 <ul>
-                  <li><a href="#">6 причин</a></li>
-                  <li><a href="#">Как мы работаем</a></li>
-                  <li><a href="#">Педагогический стаж</a></li>
-                  <li><a href="#">Наши звездочки</a></li>
-                  <li><a href="#">Отзывы</a></li>
-                  <li><a href="#">Статьи</a></li>
-                  <li><a href="#">Вопросы</a></li>
+                  <li><a href="#reasons">6 причин</a></li>
+                  <li><a href="#we-work">Как мы работаем</a></li>
+                  <li><a href="#experience">Педагогический стаж</a></li>
+                  <li><a href="#stars">Наши звездочки</a></li>
+                  <li><a href="#reviews">Отзывы</a></li>
+                  <li><a href="#reading">Статьи</a></li>
+                  <li><a href="#faq">Вопросы</a></li>
                 </ul>
               </nav><a href="tel:+7(812)4994949" class="academy-contacts__tel">+7 (812) 499-49-49</a>
             </div>
@@ -87,7 +87,7 @@
         </div>
       </div>
     </header>
-    <section class="reasons academy-sect sect-pink">
+    <section id="reasons" class="reasons academy-sect sect-pink">
       <div class="wrapper">
         <div class="title-block text-center">
           <div style="background-image: url(img/icons-svg/book.svg);" class="title-icon"></div>
@@ -165,7 +165,7 @@
         </div>
       </div>
     </section>
-    <section class="we-work academy-sect">
+    <section id="we-work" class="we-work academy-sect">
       <div class="wrapper">
         <div class="title-block text-center">
           <div style="background-image: url(img/icons-svg/checklist.svg);" class="title-icon"></div>
@@ -186,7 +186,7 @@
                   <li class="academy-paragraph">подбор учителей для каждого ребенка.</li>
                 </ul>
               </li>
-              <li id="item2" class="tabs__item hidden">
+              <li id="item2" class="tabs__item we-work-hidden">
                 <div class="we-work-informer__title">Предлагаем пошаговое сопровождение:</div>
                 <ul class="we-work-informer__list">
                   <li class="academy-paragraph">обучение не пущено на «самотек», но и не требует высокой самоорганизации от ребенка (родителя);</li>
@@ -194,7 +194,7 @@
                   <li class="academy-paragraph"> побуждаем успешность;формируем интерес и мотивацию.</li>
                 </ul>
               </li>
-              <li id="item3" class="tabs__item hidden">
+              <li id="item3" class="tabs__item we-work-hidden">
                 <div class="we-work-informer__title">Работаем в зоне развития ребенка:</div>
                 <ul class="we-work-informer__list">
                   <li class="academy-paragraph">полный эффект присутствия в классе;</li>
@@ -202,7 +202,7 @@
                   <li class="academy-paragraph">можно ускорять или замедлять продвижение в обучении, исходя из потребностей ученика.</li>
                 </ul>
               </li>
-              <li id="item4" class="tabs__item hidden">
+              <li id="item4" class="tabs__item we-work-hidden">
                 <div class="we-work-informer__title">Записываем уроки ребенка, а потому</div>
                 <ul class="we-work-informer__list">
                   <li class="academy-paragraph">можно в любой момент повторить пройденное столько раз и тогда, когда это потребуется;</li>
@@ -210,7 +210,7 @@
                   <li class="academy-paragraph">код учетной записи доступен только контролирующему администратору, родителям и ученику (по решению родителей).-</li>
                 </ul>
               </li>
-              <li id="item5" class="tabs__item hidden">
+              <li id="item5" class="tabs__item we-work-hidden">
                 <div class="we-work-informer__title">Привлекаем узких специалистов (по согласованию с родителями):</div>
                 <ul class="we-work-informer__list">
                   <li class="academy-paragraph">логопедов</li>
@@ -259,7 +259,7 @@
       </div>
       <div class="wrapper modes-bottom"><a href="#consult-popup" class="button to-popup">Узнать больше</a></div>
     </section>
-    <section class="experience academy-sect">
+    <section id="experience" class="experience academy-sect"> 
       <div class="wrapper">
         <div class="title-block text-center">
           <div style="background-image: url(img/icons-svg/portfolio.svg);" class="title-icon"></div>
@@ -271,114 +271,134 @@
         <div class="experience-block tabs tabs-default dashed">
           <div class="experience-display">
             <ul class="tabs__content">
-              <li id="item1" class="tabs__item">
-                <div class="experience-portrait"><img src="img/ivanova.jpg" alt="alt" class="experience-portrait__img"></div>
-                <div class="experience-display__text">
-                  <div class="experience-display__title">Иванова Анна <br>Станиславона</div>
-                  <ul class="experience-display__features">
-                    <li>учитель высшей категории</li>
-                    <li>преподаватель русского языка и литературы</li>
-                    <li>стаж работы с детьми 25 лет</li>
-                  </ul>
+              <li id="item1" class="tabs__item active"><a href="#" class="tabs-link__mob-toggle">Русский язык и летратура</a>
+                <div class="experience__person-block">
+                  <div class="experience-portrait"><img src="img/ivanova.jpg" alt="alt" class="experience-portrait__img"></div>
+                  <div class="experience-display__text">
+                    <div class="experience-display__title">Иванова Анна <br>Станиславона</div>
+                    <ul class="experience-display__features">
+                      <li>учитель высшей категории</li>
+                      <li>преподаватель русского языка и литературы</li>
+                      <li>стаж работы с детьми 25 лет</li>
+                    </ul>
+                  </div>
                 </div>
               </li>
-              <li id="item2" class="tabs__item hidden">
-                <div class="experience-portrait"><img src="img/ivanova.jpg" alt="alt" class="experience-portrait__img"></div>
-                <div class="experience-display__text">
-                  <div class="experience-display__title">Иванова Анна <br>Станиславона</div>
-                  <ul class="experience-display__features">
-                    <li>учитель высшей категории</li>
-                    <li>преподаватель русского языка и литературы</li>
-                    <li>стаж работы с детьми 25 лет</li>
-                  </ul>
+              <li id="item2" class="tabs__item"><a href="#" class="tabs-link__mob-toggle">Математика</a>
+                <div class="experience__person-block">
+                  <div class="experience-portrait"><img src="img/ivanova.jpg" alt="alt" class="experience-portrait__img"></div>
+                  <div class="experience-display__text">
+                    <div class="experience-display__title">Иванова Анна <br>Станиславона</div>
+                    <ul class="experience-display__features">
+                      <li>учитель высшей категории</li>
+                      <li>преподаватель русского языка и литературы</li>
+                      <li>стаж работы с детьми 25 лет</li>
+                    </ul>
+                  </div>
                 </div>
               </li>
-              <li id="item3" class="tabs__item hidden">
-                <div class="experience-portrait"><img src="img/ivanova.jpg" alt="alt" class="experience-portrait__img"></div>
-                <div class="experience-display__text">
-                  <div class="experience-display__title">Иванова Анна <br>Станиславона</div>
-                  <ul class="experience-display__features">
-                    <li>учитель высшей категории</li>
-                    <li>преподаватель русского языка и литературы</li>
-                    <li>стаж работы с детьми 25 лет</li>
-                  </ul>
+              <li id="item3" class="tabs__item"><a href="#" class="tabs-link__mob-toggle">Физика</a>
+                <div class="experience__person-block">
+                  <div class="experience-portrait"><img src="img/ivanova.jpg" alt="alt" class="experience-portrait__img"></div>
+                  <div class="experience-display__text">
+                    <div class="experience-display__title">Иванова Анна <br>Станиславона</div>
+                    <ul class="experience-display__features">
+                      <li>учитель высшей категории</li>
+                      <li>преподаватель русского языка и литературы</li>
+                      <li>стаж работы с детьми 25 лет</li>
+                    </ul>
+                  </div>
                 </div>
               </li>
-              <li id="item4" class="tabs__item hidden">
-                <div class="experience-portrait"><img src="img/ivanova.jpg" alt="alt" class="experience-portrait__img"></div>
-                <div class="experience-display__text">
-                  <div class="experience-display__title">Иванова Анна <br>Станиславона</div>
-                  <ul class="experience-display__features">
-                    <li>учитель высшей категории</li>
-                    <li>преподаватель русского языка и литературы</li>
-                    <li>стаж работы с детьми 25 лет</li>
-                  </ul>
+              <li id="item4" class="tabs__item"><a href="#" class="tabs-link__mob-toggle">Химия</a>
+                <div class="experience__person-block">
+                  <div class="experience-portrait"><img src="img/ivanova.jpg" alt="alt" class="experience-portrait__img"></div>
+                  <div class="experience-display__text">
+                    <div class="experience-display__title">Иванова Анна <br>Станиславона</div>
+                    <ul class="experience-display__features">
+                      <li>учитель высшей категории</li>
+                      <li>преподаватель русского языка и литературы</li>
+                      <li>стаж работы с детьми 25 лет</li>
+                    </ul>
+                  </div>
                 </div>
               </li>
-              <li id="item5" class="tabs__item hidden">
-                <div class="experience-portrait"><img src="img/ivanova.jpg" alt="alt" class="experience-portrait__img"></div>
-                <div class="experience-display__text">
-                  <div class="experience-display__title">Иванова Анна <br>Станиславона</div>
-                  <ul class="experience-display__features">
-                    <li>учитель высшей категории</li>
-                    <li>преподаватель русского языка и литературы</li>
-                    <li>стаж работы с детьми 25 лет</li>
-                  </ul>
+              <li id="item5" class="tabs__item"><a href="#" class="tabs-link__mob-toggle">История</a>
+                <div class="experience__person-block">
+                  <div class="experience-portrait"><img src="img/ivanova.jpg" alt="alt" class="experience-portrait__img"></div>
+                  <div class="experience-display__text">
+                    <div class="experience-display__title">Иванова Анна <br>Станиславона</div>
+                    <ul class="experience-display__features">
+                      <li>учитель высшей категории</li>
+                      <li>преподаватель русского языка и литературы</li>
+                      <li>стаж работы с детьми 25 лет</li>
+                    </ul>
+                  </div>
                 </div>
               </li>
-              <li id="item6" class="tabs__item hidden">
-                <div class="experience-portrait"><img src="img/ivanova.jpg" alt="alt" class="experience-portrait__img"></div>
-                <div class="experience-display__text">
-                  <div class="experience-display__title">Иванова Анна <br>Станиславона</div>
-                  <ul class="experience-display__features">
-                    <li>учитель высшей категории</li>
-                    <li>преподаватель русского языка и литературы</li>
-                    <li>стаж работы с детьми 25 лет</li>
-                  </ul>
+              <li id="item6" class="tabs__item"><a href="#" class="tabs-link__mob-toggle">География</a>
+                <div class="experience__person-block">
+                  <div class="experience-portrait"><img src="img/ivanova.jpg" alt="alt" class="experience-portrait__img"></div>
+                  <div class="experience-display__text">
+                    <div class="experience-display__title">Иванова Анна <br>Станиславона</div>
+                    <ul class="experience-display__features">
+                      <li>учитель высшей категории</li>
+                      <li>преподаватель русского языка и литературы</li>
+                      <li>стаж работы с детьми 25 лет</li>
+                    </ul>
+                  </div>
                 </div>
               </li>
-              <li id="item7" class="tabs__item hidden">
-                <div class="experience-portrait"><img src="img/ivanova.jpg" alt="alt" class="experience-portrait__img"></div>
-                <div class="experience-display__text">
-                  <div class="experience-display__title">Иванова Анна <br>Станиславона</div>
-                  <ul class="experience-display__features">
-                    <li>учитель высшей категории</li>
-                    <li>преподаватель русского языка и литературы</li>
-                    <li>стаж работы с детьми 25 лет</li>
-                  </ul>
+              <li id="item7" class="tabs__item"><a href="#" class="tabs-link__mob-toggle">Английский язык</a>
+                <div class="experience__person-block">
+                  <div class="experience-portrait"><img src="img/ivanova.jpg" alt="alt" class="experience-portrait__img"></div>
+                  <div class="experience-display__text">
+                    <div class="experience-display__title">Иванова Анна <br>Станиславона</div>
+                    <ul class="experience-display__features">
+                      <li>учитель высшей категории</li>
+                      <li>преподаватель русского языка и литературы</li>
+                      <li>стаж работы с детьми 25 лет</li>
+                    </ul>
+                  </div>
                 </div>
               </li>
-              <li id="item8" class="tabs__item hidden">
-                <div class="experience-portrait"><img src="img/ivanova.jpg" alt="alt" class="experience-portrait__img"></div>
-                <div class="experience-display__text">
-                  <div class="experience-display__title">Иванова Анна <br>Станиславона</div>
-                  <ul class="experience-display__features">
-                    <li>учитель высшей категории</li>
-                    <li>преподаватель русского языка и литературы</li>
-                    <li>стаж работы с детьми 25 лет</li>
-                  </ul>
+              <li id="item8" class="tabs__item"><a href="#" class="tabs-link__mob-toggle">Биология</a>
+                <div class="experience__person-block">
+                  <div class="experience-portrait"><img src="img/ivanova.jpg" alt="alt" class="experience-portrait__img"></div>
+                  <div class="experience-display__text">
+                    <div class="experience-display__title">Иванова Анна <br>Станиславона</div>
+                    <ul class="experience-display__features">
+                      <li>учитель высшей категории</li>
+                      <li>преподаватель русского языка и литературы</li>
+                      <li>стаж работы с детьми 25 лет</li>
+                    </ul>
+                  </div>
                 </div>
               </li>
-              <li id="item9" class="tabs__item hidden">
-                <div class="experience-portrait"><img src="img/ivanova.jpg" alt="alt" class="experience-portrait__img"></div>
-                <div class="experience-display__text">
-                  <div class="experience-display__title">Иванова Анна <br>Станиславона</div>
-                  <ul class="experience-display__features">
-                    <li>учитель высшей категории</li>
-                    <li>преподаватель русского языка и литературы</li>
-                    <li>стаж работы с детьми 25 лет</li>
-                  </ul>
+              <li id="item9" class="tabs__item"><a href="#" class="tabs-link__mob-toggle">Информатика</a>
+                <div class="experience__person-block">
+                  <div class="experience-portrait"><img src="img/ivanova.jpg" alt="alt" class="experience-portrait__img"></div>
+                  <div class="experience-display__text">
+                    <div class="experience-display__title">Иванова Анна <br>Станиславона</div>
+                    <ul class="experience-display__features">
+                      <li>учитель высшей категории</li>
+                      <li>преподаватель русского языка и литературы</li>
+                      <li>стаж работы с детьми 25 лет</li>
+                    </ul>
+                  </div>
                 </div>
               </li>
-              <li id="item10" class="tabs__item hidden">
-                <div class="experience-portrait"><img src="img/ivanova.jpg" alt="alt" class="experience-portrait__img"></div>
-                <div class="experience-display__text">
-                  <div class="experience-display__title">Иванова Анна <br>Станиславона</div>
-                  <ul class="experience-display__features">
-                    <li>учитель высшей категории</li>
-                    <li>преподаватель русского языка и литературы</li>
-                    <li>стаж работы с детьми 25 лет</li>
-                  </ul>
+              <li id="item10" class="tabs__item"><a href="#" class="tabs-link__mob-toggle">Обществознание</a>
+                <div class="experience__person-block">
+                  <div class="experience-portrait"><img src="img/ivanova.jpg" alt="alt" class="experience-portrait__img"></div>
+                  <div class="experience-display__text">
+                    <div class="experience-display__title">Иванова Анна <br>Станиславона</div>
+                    <ul class="experience-display__features">
+                      <li>учитель высшей категории</li>
+                      <li>преподаватель русского языка и литературы</li>
+                      <li>стаж работы с детьми 25 лет</li>
+                    </ul>
+                  </div>
                 </div>
               </li>
             </ul>
@@ -400,7 +420,7 @@
         </div>
       </div>
     </section>
-    <section class="stars academy-sect">
+    <section id="stars" class="stars academy-sect">
       <div class="wrapper">
         <div class="title-block text-center">
           <div style="background-image: url(img/icons-svg/peak.svg);" class="title-icon"></div>
@@ -458,7 +478,7 @@
         </div>
       </div>
     </section>
-    <section class="reviews academy-sect sect-blue">
+    <section id="reviews" class="reviews academy-sect sect-blue">
       <div class="wrapper">
         <div class="title-block text-center">
           <div style="background-image: url(img/icons-svg/heart.svg);" class="title-icon"></div>
@@ -488,7 +508,7 @@
       </div>
       <div class="wrapper reviews-button"><a href="#request-popup" class="button to-popup">Начать учиться</a></div>
     </section>
-    <section class="reading academy-sect">
+    <section id="reading" class="reading academy-sect">
       <div class="wrapper">
         <div class="title-block text-center">
           <div style="background-image: url(img/icons-svg/reading.svg);" class="title-icon"></div>
@@ -541,7 +561,7 @@
         </div>
       </div>
     </section>
-    <section class="questions academy-sect">
+    <section id="faq" class="questions academy-sect">
       <div class="wrapper">
         <div class="title-block text-center">
           <div style="background-image: url(img/icons-svg/conversation.svg);" class="title-icon"></div>

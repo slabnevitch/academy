@@ -42,6 +42,19 @@ jQuery(function() {
 
 			}
 
+			var $menuLinks = $('.header-menu ul li a');
+			$menuLinks.click(function(e){
+				e.preventDefault();
+				var location = $(this).attr('href'), //секция с id, равным href текущей ссылки
+					headerFixedHeight = $('.banner--clone').height();
+					sectionCoord = $(location).offset().top - headerFixedHeight;
+
+				$('.header-top').removeClass('menu-opened');
+				$('html').removeClass('menu-opened');
+				$('.menu-icon').removeClass('clicked');
+
+				$('html, body').animate({scrollTop: sectionCoord}, 800);
+			});
 	
 		// end section Header
 
@@ -102,9 +115,9 @@ jQuery(function() {
 				},
 				this.textContentRender = function() {
 					$informerTextItems.eq(index)
-						.removeClass('hidden')
+						.removeClass('we-work-hidden')
 						.siblings()
-						.addClass('hidden');
+						.addClass('we-work-hidden');
 				}
 
 				this.init();
@@ -127,9 +140,21 @@ jQuery(function() {
 						.removeClass('tabs__item--active');
 								
 				$parentTabs.find($href)
-					.removeClass('hidden')
+					.addClass('active')
 					.siblings()
-					.addClass('hidden');
+					.removeClass('active');
+			});
+
+			$('.tabs-link__mob-toggle').click(function() {
+				var $th = $(this),
+					$parentItem = $th.closest('.tabs__item');
+
+				$parentItem.toggleClass('active')
+					.siblings()
+					.removeClass('active');
+
+				return false;
+
 			});
 		// end section .experience
 
