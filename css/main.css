@@ -3999,8 +3999,6 @@ ul, li {
     max-height: 700px; } }
 
 @media only screen and (max-width: 320px) {
-  .header-top .logo .logo-text {
-    display: none; }
   .logo .logo-text div:last-child {
     font-size: 10px;
     line-height: 10px; } }
