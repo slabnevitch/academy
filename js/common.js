@@ -211,6 +211,32 @@ jQuery(function() {
 		});
 		// end section stars
 
+		// sections reading
+			$('.reading-slider').slick({
+			slidesToScroll: 1,
+			slidesToShow: 3,
+			responsive: [
+
+			{
+				breakpoint: 1101,
+				settings: {
+
+					slidesToShow: 2,
+
+				}	
+			},
+			{
+				breakpoint: 900,
+				settings: {
+
+						slidesToShow: 1
+
+				}	
+			}
+			]
+		});
+		// end sections reading
+
 		// section reviews
 			$('.reviews-slider').slick({
 				responsive: [
