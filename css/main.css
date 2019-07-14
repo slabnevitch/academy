@@ -4370,10 +4370,11 @@ ul, li {
 
 @media only screen and (max-width: 1764px) {
   .we-work {
-    padding-bottom: 12.5rem; }
+    padding-bottom: 12.5rem;
+    background-position-x: 50%; }
   .we-work .we-work__content .we-work-informer {
     padding-right: 0;
-    padding-left: 330px; }
+    padding-left: 300px; }
   .we-work .we-work__content .we-work-informer .we-work-informer__counter {
     right: -webkit-calc(100% - 78px);
     right: calc(100% - 78px);
